@@ -1,0 +1,91 @@
+@media (max-width: 430px) {
+  #sreen_account {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .user-name {
+    line-height: 18px;
+    font-size: 20px;
+  }
+
+  .user-name p {
+    font-weight: 200;
+  }
+
+  .user-name h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .saldo {
+    padding: 0 0 0 25px;
+    line-height: 30px;
+  }
+
+  .saldo p {
+    font-weight: 200;
+  }
+
+  .container-account {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .container-account p {
+    margin: 20px 0 0 25px;
+    font-weight: 200;
+  }
+
+  .i {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 20px 0 20px;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .i::-webkit-scrollbar {
+    display: none;
+  }
+
+  .item-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+  }
+
+  .container-button-menu {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: transform 0.3s;
+  }
+
+  .container-button-menu:active {
+    transform: scale(0.9);
+  }
+}

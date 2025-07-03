@@ -1,0 +1,10 @@
+@media (max-width: 430px) {
+    #body_singup {
+        width: 100dvw;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
