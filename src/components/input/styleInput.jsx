@@ -19,17 +19,17 @@ function StyleInput({
   return (
     <div className="container-input">
       <input
-        {...props}
-        value={value}
-        onChange={onChange}
-        className="style-inputs"
-        type="text"
-        placeholder={placeholder}
-        inputMode={eye && "numeric"}
-        pattern="[0-9]*"
-        maxLength={eye && 6}
-        style={eye && { WebkitTextSecurity: !see ? "disc" : "none" }}
-      />
+  {...props}
+  value={value}
+  onChange={onChange}
+  className="style-inputs"
+  type="text"
+  placeholder={placeholder}
+  inputMode={eye ? (see ? "text" : "numeric") : "text"}
+  pattern={eye && !see ? "[0-9]*" : undefined}
+  maxLength={eye ? 6 : undefined}
+  style={eye ? { WebkitTextSecurity: !see ? "disc" : "none" } : {}}
+/>
       {check && <IoCheckmarkOutline className="eye" />}
       {eye &&
         (see ? (
